@@ -1,33 +1,38 @@
-# Gridworld-use-a-rectangular-grid-to-illustrate-value-functions-for-a-simple-finite-MDP-
+# Ex-2: Gridworld-use-a-rectangular-grid-to-illustrate-value-functions-for-a-simple-finite-MDP
 
-## Aim
+## Aim:
 The aim of this project is to implement a Gridworld environment using Reinforcement Learning concepts to illustrate value functions in a simple finite Markov Decision Process (MDP).
 
 ---
 
-# Algorithm
+## Algorithm:
 
-## Iterative Policy Evaluation Algorithm for Gridworld
+### Iterative Policy Evaluation Algorithm for Gridworld:-
 
-### Step 1
+**- Step 1:**
+
 Initialize the Gridworld environment.
 
-### Step 2
+**- Step 2:**
+
 Define:
 - States
 - Actions
 - Rewards
 - Transition probabilities
 
-### Step 3
+**- Step 3:**
+
 Initialize the value function \( V(s) \) for all states to zero.
 
-### Step 4
+**- Step 4:**
+
 For each state:
 - Evaluate all possible actions
 - Compute the expected return
 
-### Step 5
+**- Step 5:**
+
 Update the state value using the Bellman Equation:
 
 Where:
@@ -36,21 +41,19 @@ Where:
 - \( r \) → Reward
 - \( V(s') \) → Next state value
 
-### Step 6
+**- Step 6:**
+
 Repeat updates until the value function converges.
 
-### Step 7
+**- Step 7:**
+
 Display the final state-value grid.
 
 ---
 
-# Program
+## Program:
 
-```
-Name : Shanthosh G
-Register number : 2305003008
-
-#GridWorld
+```python
 
 import numpy as np
 
@@ -132,15 +135,19 @@ for r in range(rows):
 print("\nPolicy:\n")
 for row in policy:
     print(row)
+
 ```
 
+---
+
+## Output:
+
+<img width="462" height="274" alt="image" src="https://github.com/user-attachments/assets/f2fea285-f29e-489f-bd30-b5f1eee855fb" />
 
 
-# Output
+---
 
-<img width="663" height="367" alt="image" src="https://github.com/user-attachments/assets/1c646d51-0b5e-4736-b9c7-5dc0d9a7a078" />
-
-# Result
+## Result:
 
 The Gridworld environment was successfully implemented using a rectangular grid to demonstrate value functions in a finite Markov Decision Process (MDP).  
 The state values were computed using iterative policy evaluation and the Bellman equation, showing how the agent estimates the long-term reward for each state in the environment.
